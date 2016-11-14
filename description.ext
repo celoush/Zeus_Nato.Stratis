@@ -1,0 +1,55 @@
+onLoadIntroTime = true;
+onLoadMissionTime = true;
+OnLoadMission = $STR_CELO_LOAD_TEXT;
+OnLoadMissionIntro = $STR_CELO_LOAD_INTRO_TEXT;
+
+author= $STR_CELO_AUTHOR;
+OnLoadName = $STR_CELO_MISSION_NAME;
+
+showGPS = 1; 
+debriefing = 1; 
+showCompass = 1; 
+showMap = 1; 
+showNotepad = 1; 
+showWatch = 1;
+
+doneKeys[] = {"key_celo_zeus_template"};
+
+respawn = "BASE"
+respawnDelay = 60;
+respawnOnStart = -1;
+respawnVehicleDelay = 120;
+
+ReviveMode = 1;
+reviveDelay = 30;
+reviveForceRespawnDelay = 3;
+reviveBleedOutDelay = 450;
+ReviveRequiredItems = 2;
+ReviveRequiredItemsFakConsumed = 1;
+ReviveMedicSpeedMultiplier = 2;
+
+joinUnassigned = 1;
+respawnTemplates[] = {"Revive","MenuPosition","Spectator"};
+
+disabledAI = 1;
+
+enableDebugConsole = 1;
+enableEngineArtillery=false;
+
+class Header {
+	 
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 128;
+	playerCountMultipleOf = 1;
+};
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = $STR_CELO_DEBR_TITLE;
+		subtitle = "";
+		description = $STR_CELO_DEBR_DESCRIPTION;
+	};
+};
